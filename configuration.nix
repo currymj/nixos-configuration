@@ -34,7 +34,6 @@
    environment.systemPackages = with pkgs; [
 	wget
 	vim
-	firefox
 	neovim
 	emacs
 	pandoc
