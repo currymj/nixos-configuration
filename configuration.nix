@@ -38,13 +38,18 @@
 	emacs
 	pandoc
 	stack
+	firefox
 	hello
 	nox
 	yakuake
+	lua52Packages.cjson
 	zlib
 	gcc
 	gnumake
 	gitAndTools.gitFull
+	keybase-gui
+	keybase
+	kbfs
 	coreutils
 	bc
 	file
@@ -73,6 +78,8 @@
 	vi = "nvim";
 	vim = "nvim";
    };
+   services.keybase.enable = true;
+   services.kbfs.enable = true;
 
   fonts.fonts = [ pkgs.google-fonts ];
   # Some programs need SUID wrappers, can be configured further or are
