@@ -44,6 +44,8 @@
 	yakuake
 	lua52Packages.cjson
 	zlib
+	pv
+	sysstat
 	gcc
 	gnumake
 	gitAndTools.gitFull
