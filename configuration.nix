@@ -11,6 +11,7 @@
     ];
   nixpkgs.config.allowUnfree = true;
   hardware.ckb.enable = true;
+  virtualisation.docker.enable = true;
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -42,6 +43,7 @@
 	hello
 	nox
 	yakuake
+	pijul
 	lua52Packages.cjson
 	zlib
 	pv
@@ -122,7 +124,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
    users.extraUsers.curry = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ];
+     extraGroups = [ "wheel" "docker" ];
      uid = 1000;
    };
 
